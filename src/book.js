@@ -14,8 +14,9 @@ function buildMainCharacter(name, age, pronouns) {
   return mainBookCharacter;
 }
 
-function saveReview() {
-
+function saveReview(bookReview, reviews) {
+  reviews.push(bookReview);
+    return reviews;
 }
 
 
