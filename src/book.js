@@ -29,8 +29,14 @@ return title.length * 20;
 }
 
 
-function writeBook() {
-
+function writeBook(title, mainCharacter, pageCount, genre) {
+var newBook = {
+  title: title,
+  mainCharacter: mainCharacter,
+  pageCount: calculatePageCount(title),
+  genre: "fantasy"
+}
+return newBook;
 }
 
 
