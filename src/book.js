@@ -29,16 +29,26 @@ return title.length * 20;
 }
 
 
-function writeBook(title, mainCharacter, pageCount, genre) {
+function writeBook(title, mainCharacter, genre) {
 var newBook = {
   title: title,
   mainCharacter: mainCharacter,
   pageCount: calculatePageCount(title),
-  genre: "fantasy"
+  genre: genre
 }
 return newBook;
 }
 
+
+
+function editBook(newBook) {
+   newBook.pageCount = newBook.pageCount * 0.75;
+
+}
+//
+// var newCount = (pages*.25);
+// var newPages = (pages-newCount);
+// pages = newPages;
 
 
 module.exports = {
@@ -47,5 +57,5 @@ module.exports = {
   saveReview,
   calculatePageCount,
   writeBook,
-  // editBook
+  editBook
 }
