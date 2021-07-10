@@ -14,17 +14,27 @@ function buildMainCharacter(name, age, pronouns) {
   return mainBookCharacter;
 }
 
+
 function saveReview(bookReview, reviews) {
+  for (var i = 0; i < reviews.length; i++) {
+    if (bookReview === reviews[i]) {
+      return;
+    }
+  }
   reviews.push(bookReview);
-    return reviews;
 }
+
+function calculatePageCount() {
+
+}
+
 
 
 module.exports = {
   createTitle,
   buildMainCharacter,
   saveReview,
-  // calculatePageCount,
+  calculatePageCount,
   // writeBook,
   // editBook
 }
