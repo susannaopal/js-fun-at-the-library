@@ -32,8 +32,7 @@ function checkoutBook(libraryName, title, genreShelf) {
 }
 
 
-//matters where you put the return
-//
+
 module.exports = {
   createLibrary,
   addBook,
