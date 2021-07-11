@@ -43,12 +43,7 @@ return newBook;
 
 function editBook(newBook) {
    newBook.pageCount = newBook.pageCount * 0.75;
-
 }
-//
-// var newCount = (pages*.25);
-// var newPages = (pages-newCount);
-// pages = newPages;
 
 
 module.exports = {
