@@ -1,10 +1,35 @@
 
 
 function createLibrary(name) {
-  var library = {
+  // var library = {
+  return {
     name: name,
+    shelves: {
+      fantasy: [],
+      fiction: [],
+      nonFiction: [],
+    }
+  }
   };
-   return (library);
+
+
+
+
+function addBook(name, book) {
+  // var library = createLibrary();
+  // var library = {
+  //   name: createLibrary(),
+    // shelves: {
+    //   fantasy: [],
+    //   fiction: [],
+    //   nonFiction: [],
+    // }
+    // library.shelves.genre.title
+
+
+   // return name.shelves.fantasy.unshift(book);
+   return name.shelves[book.genre].unshift(book);
+
 }
 
 
@@ -12,6 +37,6 @@ function createLibrary(name) {
 
 module.exports = {
   createLibrary,
-  // addBook,
+  addBook,
   // checkoutBook
 };
