@@ -54,7 +54,7 @@ describe("library.js", function() {
       assert.equal(denverLibrary.shelves.fantasy[0], dracula);
     });
 
-    it.skip("should add books to the correct shelves automatically", function() {
+    it("should add books to the correct shelves automatically", function() {
       var denverLibrary = createLibrary("Denver Public Library");
       var dracula = {
         title: "Dracula",
@@ -71,7 +71,7 @@ describe("library.js", function() {
 
       addBook(denverLibrary, dracula);
       addBook(denverLibrary, paleBlueDot);
-
+//there needs to be a way to check which genre the shelf is to add the book
       assert.equal(denverLibrary.shelves.fantasy[0], dracula);
       assert.equal(denverLibrary.shelves.nonFiction[0], paleBlueDot);
     });
