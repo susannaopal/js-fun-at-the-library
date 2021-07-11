@@ -1,15 +1,14 @@
 
 
 function createLibrary(name) {
-  // var library = {
   return {
-    name: name,
-    shelves: {
-      fantasy: [],
-      fiction: [],
-      nonFiction: [],
+      name: name,
+      shelves: {
+        fantasy: [],
+        fiction: [],
+        nonFiction: [],
+      }
     }
-  }
   };
 
 
@@ -27,16 +26,14 @@ function checkoutBook(libraryName, title, genreShelf) {
     if (title === libraryName.shelves[genreShelf][i].title) {
       libraryName.shelves[genreShelf].splice(i, 1);
         return `You have now checked out ${title} from the ${libraryName.name}`;
-
       }
-    //library shelves genre book
   }
-  // return libraryName.shelves[genreShelf].splice();
-
+  return `Sorry, there are currently no copies of ${title} available at the ${libraryName.name}`;
 }
- //what kind of data types they are and
- // how they are nested
 
+
+//matters where you put the return
+//
 module.exports = {
   createLibrary,
   addBook,
