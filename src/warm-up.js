@@ -21,9 +21,8 @@ var pages = 200;
 // of what it currently is
 
 
-var newCount = (pages*.25);
-var newPages = (pages-newCount);
-pages = newPages;
+var newPageCount = pages * 0.75
+
 
 
 
